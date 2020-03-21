@@ -3,13 +3,14 @@ my code on blinking led on particle
 // I have used the example code available on particle.io to blink an LED and modified the code to blink my first name in morse code
 
 //initialising led on the particle
+
 int led1 = D0; 
 int led2 = D7; 
 
 void setup() {
 
-  pinMode(led1, OUTPUT);
-  pinMode(led2, OUTPUT);
+    pinMode(led1, OUTPUT);
+    pinMode(led2, OUTPUT);
 
 }
 
@@ -56,25 +57,26 @@ void space() {
  
     delay(500);
 }
+
 void loop() {
-    
-  // first letter of name: D (in morse code= -..)
-  dash();
-  dot();
-  dot();
-  space();
-  //second letter of name: I (in morse code= ..)
-  dot();
-  dot();
-  space();
-  //third letter of name: N (in morse code= -.)
-  dash();
-  dot();
-  space();
-  //fourth letter of name: A (in morse code= .-)
-  dot();
-  dash();
-  space();
+
+    // first letter of name: D (in morse code= -..)
+    dash();
+    dot();
+    dot();
+    space();
+    //second letter of name: I (in morse code= ..)
+    dot();
+    dot();
+    space();
+    //third letter of name: N (in morse code= -.)
+    dash();
+    dot();
+    space();
+    //fourth letter of name: A (in morse code= .-)
+    dot();
+    dash();
+    space();
   
 }
 
